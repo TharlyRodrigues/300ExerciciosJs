@@ -114,3 +114,50 @@
 
 // // Chamada da função principal
 // calcularResultado();
+
+//Q7
+
+/*Escreva um programa em javascript que funcione como um conversos de medidas. O programa deverá pedir por um valor em metros e então dar a opção de escolher para qual unidade de medida esse valor deve ser convertido. As opções são:
+milímetro (mm)
+centímetro (cm)
+decímetro (dm)
+decâmetro (dam)
+hectômetro (hm)
+quilômetro (km)
+
+// Função para converter metros para outras unidades
+function converterMedida(valor, unidade) {
+  switch (unidade) {
+    case "mm":
+      return valor * 1000;
+    case "cm":
+      return valor * 100;
+    case "dm":
+      return valor * 10;
+    case "dam":
+      return valor / 10;
+    case "hm":
+      return valor / 100;
+    case "km":
+      return valor / 1000;
+    default:
+      return "Unidade não reconhecida";
+  }
+}
+
+// Função principal para solicitar o valor e a unidade de medida
+function conversorDeMedidas() {
+  const valorEmMetros = parseFloat(prompt("Digite o valor em metros:"));
+  const unidade = prompt(
+    "Para qual unidade você deseja converter? (mm, cm, dm, dam, hm, km)"
+  );
+
+  const resultado = converterMedida(valorEmMetros, unidade);
+  alert(`O valor convertido é: ${resultado} ${unidade}`);
+}
+
+// Chama a função principal
+
+conversorDeMedidas();*/
+
+//Q8
