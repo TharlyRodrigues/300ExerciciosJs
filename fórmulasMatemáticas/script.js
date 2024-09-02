@@ -161,3 +161,56 @@ function conversorDeMedidas() {
 conversorDeMedidas();*/
 
 //Q8
+
+// Função principal para coletar informações do turista
+/*function coletarInformacoesTurista() {
+  const nomeTurista = prompt("Qual é o seu nome?");
+  let cidadesVisitadas = [];
+  let visitouCidade = prompt(
+    "Você já visitou alguma cidade? (sim/não)"
+  ).toLowerCase();
+
+  while (visitouCidade === "sim") {
+    let cidade = prompt("Qual é o nome da cidade que você visitou?");
+    cidadesVisitadas.push(cidade);
+    visitouCidade = prompt(
+      "Você visitou outra cidade? (sim/não)"
+    ).toLowerCase();
+  }
+
+  // Exibir as informações coletadas
+  alert(
+    `Turista: ${nomeTurista}\nNúmero de cidades visitadas: ${
+      cidadesVisitadas.length
+    }\nCidades visitadas: ${cidadesVisitadas.join(", ")}`
+  );
+}
+
+// Chama a função principal
+coletarInformacoesTurista();*/
+
+//Q9
+/*
+function palavraSepara() {
+  const palavra = prompt("Digite uma palavra:");
+
+  let separado= [];
+
+  for (let i = 0; i < palavra.length; i++) {
+    separa.push(palavra[i]);
+  }
+  alert(`letra da palavra:  ${separado.join(" - ")}`);
+}
+
+palavraSepara();
+*/
+
+/*
+//Q10
+let frase = prompt("Digite uma frase:");
+
+// -
+let novaFrase = frase.replace(/a/g, "e");
+
+alert(`nova frase: ${novaFrase}`);
+*/
