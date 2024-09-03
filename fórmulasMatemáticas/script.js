@@ -214,3 +214,71 @@ let novaFrase = frase.replace(/a/g, "e");
 
 alert(`nova frase: ${novaFrase}`);
 */
+
+//Q11
+
+/*function iniciarMenu() {
+  let opcao;
+
+  do {
+    opcao = prompt(
+      "menu interativo:\n1. opção 1\n2. opção 2 \n3. opção 3 \n4. opção 4 \n5. encera 5"
+    );
+    if (opcao >= 1 && opcao <= 4) {
+      alert(`você escolheu a opção ${opcao}`);
+    } else if (opcao === "5") {
+      alert("o sistema está sendo encerrado...");
+    } else {
+      alert("opção invalida. tente novamente");
+    }
+  } while (opcao !== "5");
+}
+
+iniciarMenu();
+*/
+
+//Q12
+function iniciarMenu() {
+  let dinheiro = parseFloat(
+    prompt("Digite a quantidade inicial de dinheiro disponível:")
+  );
+
+  let opcao;
+
+  while (opcao !== "3") {
+    opcao = prompt(
+      `Quantidade de dinheiro disponível: R$ ${dinheiro.toFixed(2)}
+      100\n\nEscolha uma opção:\n1. Adicionar dinheiro\n2. Remover dinheiro\n3. Sair`
+    );
+
+    if (opcao === "1") {
+      let adicionar = parseFloat(
+        prompt("Digite a quantidade de dinheiro a ser adicionada:")
+      );
+      if (!isNaN(adicionar) && adicionar > 0) {
+        dinheiro += adicionar;
+      } else {
+        alert("Valor inválido. Tente novamente.");
+      }
+    } else if (opcao === "2") {
+      let remover = parseFloat(
+        prompt("Digite a quantidade de dinheiro a ser removida:")
+      );
+      if (!isNaN(remover) && remover > 0) {
+        if (remover <= dinheiro) {
+          dinheiro -= remover;
+        } else {
+          alert("Você não tem dinheiro suficiente para remover essa quantia.");
+        }
+      } else {
+        alert("Valor inválido. Tente novamente.");
+      }
+    } else if (opcao === "3") {
+      alert("O sistema está sendo encerrado...");
+    } else {
+      alert("Opção inválida. Tente novamente.");
+    }
+  }
+}
+
+iniciarMenu();
