@@ -238,6 +238,7 @@ iniciarMenu();
 */
 
 //Q12
+/*
 function iniciarMenu() {
   let dinheiro = parseFloat(
     prompt("Digite a quantidade inicial de dinheiro disponível:")
@@ -282,3 +283,50 @@ function iniciarMenu() {
 }
 
 iniciarMenu();
+*/
+
+//Q13
+/*
+function calcularTabuada() {
+  let numero = parseFloat(
+    prompt("Digite o número para calcular a tabuada (de 1 : 20)")
+  );
+
+  let resultado = "";
+
+  for (let i = 1; i <= 20; i++) {
+    resultado += `${numero} x ${i} = ${numero * i}\n`;
+  }
+  alert(resultado);
+}
+
+calcularTabuada();
+*/
+
+//Q14
+
+// Função para verificar se uma palavra é um palíndromo
+function verificarPalindromo() {
+  // Solicita ao usuário a palavra a ser verificada
+  let palavra = prompt("Digite uma palavra para verificar se é um palíndromo:");
+
+  // Remove espaços e converte a palavra para minúsculas
+  let palavraFormatada = palavra.replace(/\s+/g, "").toLowerCase();
+
+  // Inverte a palavra formatada
+  let palavraInvertida = palavraFormatada.split("").reverse().join("");
+
+  // Verifica se a palavra formatada é igual à palavra invertida
+  if (palavraFormatada === palavraInvertida) {
+    alert(`A palavra "${palavra}" é um palíndromo.`);
+  } else {
+    alert(
+      `A palavra "${palavra}" não é um palíndromo.\n` +
+        `Lida da esquerda para a direita: ${palavraFormatada}\n` +
+        `Lida da direita para a esquerda: ${palavraInvertida}`
+    );
+  }
+}
+
+// Chama a função para verificar o palíndromo
+verificarPalindromo();
