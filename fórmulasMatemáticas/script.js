@@ -304,7 +304,7 @@ calcularTabuada();
 */
 
 //Q14
-
+/*
 // Função para verificar se uma palavra é um palíndromo
 function verificarPalindromo() {
   // Solicita ao usuário a palavra a ser verificada
@@ -330,3 +330,21 @@ function verificarPalindromo() {
 
 // Chama a função para verificar o palíndromo
 verificarPalindromo();
+*/
+
+//Q15
+
+const palavra = prompt("Informe uma palavra:");
+
+let palavraInvertida = "";
+
+for (let i = palavra.length - 1; i >= 0; i--) {
+  palavraInvertida += palavra[i];
+}
+
+if (palavra === palavraInvertida) {
+  alert(`${palavra} é um palíndromo`);
+} else {
+  alert(`${palavra} não é um palíndromo!\n\n 
+    ${palavra} !== ${palavraInvertida}`);
+}
