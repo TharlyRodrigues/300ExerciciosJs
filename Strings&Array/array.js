@@ -66,3 +66,35 @@ do {
   }
 } while (opcao !== "3");
 */
+
+//Q3
+/* escreva um program que receba um nome e verifique se o msm começa com a letra 'A'.
+
+
+let nome = prompt("Digite um nome");
+
+if (nome.charAt(0).toUpperCase() === "A") {
+  alert("O nome começa com a letra A");
+} else {
+  alert("O nome nao começa com a letra A");
+}
+ */
+
+//Q4
+/* 
+faça um programa que leia e converta uma palavra 
+
+
+let invertePalavra = "";
+
+let palavra = prompt("digite uma palavra");
+
+for (let i = palavra.length - 1; i >= 0; i--) {
+  invertePalavra += palavra[i];
+}
+if (palavra === invertePalavra) {
+  alert(`${palavra} é palíndromo`);
+} else {
+  alert(`${palavra} ñ é palíndromo `);
+}
+*/
